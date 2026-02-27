@@ -7,12 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Actor extends Model
 {
-protected $fillable = [
-    "name",
-    "surname",
-    "birthdate",
-    "country",
-    "agency",
-    "img_url",
-];
+    use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'surname',
+        'birthdate',
+        'country',
+        'agency',
+        'img_url',
+    ];
 }
