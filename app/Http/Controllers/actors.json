@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Harrison Ford",
+        "birth_date": "1942-07-13",
+        "country": "USA",
+        "img_url": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSuG7z9_zuJCRsIlKbHWYeqOYB0Ctoa1p8ejI3xpMH2IfA-xu0Ir64Qr6YNDbHUSyjfoAfHm8I5wO7syJHrr3jzLeIH4HzkFPXWscgqVpApEjvMRPuL0Z4dyzLaYc1ouZdl78fU0Yti1lYF&s=19"
+    },
+    {
+        "id": 2,
+        "name": "Meryl Streep",
+        "birth_date": "1949-06-22",
+        "country": "USA",
+        "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Y864Nhx8I8uyi7JdUwBO9hu56QhfuTgo_M_4E-5BOPBvzyaOz7Inde07dyElu8BrAcHyfAgu9qpFivI3HCK3eO25fpBzkDbUoFWaI35i&s=10"
+    },
+    {
+        "id": 3,
+        "name": "Leonardo DiCaprio",
+        "birth_date": "1974-11-11",
+        "country": "USA",
+        "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Y864Nhx8I8uyi7JdUwBO9hu56QhfuTgo_M_4E-5BOPBvzyaOz7Inde07dyElu8BrAcHyfAgu9qpFivI3HCK3eO25fpBzkDbUoFWaI35i&s=10"
+    }
+]

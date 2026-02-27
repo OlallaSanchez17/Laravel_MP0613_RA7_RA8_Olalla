@@ -40,6 +40,9 @@
         {{-- peliculas ordenadas por años  --}}
         <li><a href="/filmout/sortFilms">Películas Ordenadas</a></li>
 
+        <hr>
+        {{-- Actores --}}
+        <li><a href="{{ route('allActors') }}">Listado de Actores</a></li>
     </ul>
     <!-- Include any additional HTML or Blade directives here -->
 
