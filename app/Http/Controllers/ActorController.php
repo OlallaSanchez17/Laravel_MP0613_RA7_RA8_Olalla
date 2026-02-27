@@ -4,17 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\Actor;
+
 class ActorController extends Controller
 {
     public static function readActors(): array
     {
-        $jsonFile = __DIR__ . '/actors.json';
-
-        if (!file_exists($jsonFile)) {
-            return [];
-        }
-
-        $actors = json_decode(file_get_contents($jsonFile), true);
+        $actors = Actor::all()->toArray();
 
         return is_array($actors) ? $actors : [];
     }

@@ -18,7 +18,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::get('/films', function () {
+    return view('films.welcome');
+});
+
+Route::get('/actors', function () {
+    return view('actors.welcome');
 });
 
 Route::middleware('year')->group(function() {

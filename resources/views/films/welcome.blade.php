@@ -40,9 +40,6 @@
         {{-- peliculas ordenadas por años  --}}
         <li><a href="/filmout/sortFilms">Películas Ordenadas</a></li>
 
-        <hr>
-        {{-- Actores --}}
-        <li><a href="{{ route('allActors') }}">Listado de Actores</a></li>
     </ul>
     <!-- Include any additional HTML or Blade directives here -->
 
@@ -85,6 +82,9 @@
             </div>
             <button type="submit" class="btn btn-success mt-2">Añadir Película</button>
         </form>
+    </div>
+        <div class="mt-5">
+        <a href="/" class="btn btn-secondary">Volver al Inicio</a>
     </div>
     @include('partials.footer')
 

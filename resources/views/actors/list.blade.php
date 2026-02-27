@@ -23,7 +23,7 @@
             <tr>
                 <td>{{$actor['id']}}</td>
                 <td>{{$actor['name']}}</td>
-                <td>{{$actor['birth_date']}}</td>
+                <td>{{$actor['birthdate']}}</td>
                 <td>{{$actor['country']}}</td>
                 <td><img src="{{$actor['img_url']}}" style="width: 100px; height: 120px;" /></td>
             </tr>
