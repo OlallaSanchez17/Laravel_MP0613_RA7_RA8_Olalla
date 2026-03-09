@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 @include('partials.header')
 
 @yield('content')
@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actors Management</title>
+    <title>Gestión de Actores</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
@@ -26,6 +26,7 @@
 
     <ul class="mt-4">
         <li><a href="{{ route('allActors') }}">Listado de todos los actores</a></li>
+        <li><a href="{{ route('actorsByDecade') }}">Listado de actores por década</a></li>
         {{-- Aquí se pueden añadir más opciones de actores si fuera necesario --}}
     </ul>
 
