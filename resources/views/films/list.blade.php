@@ -1,5 +1,13 @@
-<link rel="stylesheet" href="{{ asset(path: 'css/list.css') }}">
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Películas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('css/list.css') }}">
+</head>
+<body class="container">
 @include('partials.header')
 
 @yield('content')
@@ -33,8 +41,14 @@
             </tr>
         @endforeach
     </table>
+        <div class="mt-5">
+            <a href="/films" class="btn btn-secondary">Volver al Listado de Películas</a>
+            <a href="/" class="btn btn-secondary">Volver al Inicio</a>
+        </div>
     @include('partials.footer')
+    </div>
+@endif
 
     @yield('content')
-</div>
-@endif
+</body>
+</html>
