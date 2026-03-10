@@ -27,7 +27,7 @@
     <ul class="mt-4">
         <li><a href="{{ route('allActors') }}">Listado de todos los actores</a></li>
         <li><a href="{{ route('actorsByDecade') }}">Listado de actores por década</a></li>
-        {{-- Aquí se pueden añadir más opciones de actores si fuera necesario --}}
+        <li><a href="{{ route('countActors') }}">Conteo de actores</a></li> 
     </ul>
 
     <div class="mt-5">

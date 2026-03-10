@@ -69,4 +69,12 @@ class ActorController extends Controller
             "selectedDecade" => $year
         ]);
     }
+    public function countActors()
+    {
+        $actors = self::readActors(); 
+        $count = count($actors);
+        $title = "Total de actores";
+
+        return view('actors.count', ['count' => $count, 'title' => $title]);     
+    }
 }

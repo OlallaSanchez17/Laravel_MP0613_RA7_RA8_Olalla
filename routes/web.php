@@ -58,6 +58,7 @@ Route::middleware('actor')->group(function() {
     //Lista actores
     Route::get('allActors', [ActorController::class, "listAllActors"])->name('allActors');
     Route::get('actorsByDecade/{year?}', [ActorController::class, "listActorsByDecade"])->name('actorsByDecade');
+    Route::get('/countActors', [ActorController::class, 'countActors'])->name('countActors');
 });
 
 
