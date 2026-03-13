@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\Film;
 use App\Models\Actor;
+use App\Http\Controllers\ActorController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -26,3 +27,7 @@ Route::get('/films', function () {
 Route::get('/actors', function () {
     return Actor::all();
 });
+
+Route::delete('/actors/{id}', [ActorController::class, 'deleteActor']);
+
+
