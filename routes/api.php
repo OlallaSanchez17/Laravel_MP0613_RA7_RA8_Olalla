@@ -21,7 +21,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/films', function () {
-    return Film::all();
+    return Film::with('actors')->get();
 });
 
 Route::get('/actors', function () {

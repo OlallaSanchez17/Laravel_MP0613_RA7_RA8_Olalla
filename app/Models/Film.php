@@ -17,4 +17,12 @@ class Film extends Model
         'duration',
         'img_url',
     ];
+
+    /**
+     * The actors that belong to the film.
+     */
+    public function actors()
+    {
+        return $this->belongsToMany(Actor::class, 'films_actor');
+    }
 }

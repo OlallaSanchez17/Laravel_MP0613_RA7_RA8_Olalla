@@ -17,4 +17,13 @@ class Actor extends Model
         'agency',
         'img_url',
     ];
+
+    /**
+     * The films that belong to the actor.
+     */
+    public function films()
+    {
+        return $this->belongsToMany(Film::class, 'films_actor');
+    }
 }
+
