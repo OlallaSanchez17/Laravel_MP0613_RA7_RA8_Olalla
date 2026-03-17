@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Film extends Model
 {
     use HasFactory;
+    
+    protected $with = ['actors'];
+
 
     protected $fillable = [
         'name',
@@ -23,6 +26,6 @@ class Film extends Model
      */
     public function actors()
     {
-        return $this->belongsToMany(Actor::class, 'films_actor');
+        return $this->belongsToMany(Actor::class);
     }
 }
