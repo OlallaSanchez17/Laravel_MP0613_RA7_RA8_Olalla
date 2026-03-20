@@ -131,5 +131,11 @@ class FilmController extends Controller
             return $this->listAllFilms();
         }
     }
+
+    public function listFilmsWithActors()
+    {
+        $films = Film::with('actors')->get();
+        return response()->json($films);
+    }
 }
 
