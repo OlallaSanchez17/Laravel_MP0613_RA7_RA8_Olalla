@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::rename('films_actor', 'actor_film');
     }
 
-    /**
+    /**x
      * Reverse the migrations.
      */
     public function down(): void
