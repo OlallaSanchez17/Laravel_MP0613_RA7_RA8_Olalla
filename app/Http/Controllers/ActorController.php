@@ -43,9 +43,7 @@ class ActorController extends Controller
  
         return view("actors.list", [
             "actors" => $actors,
-            "title" => $title,
-            "decades" => ActorController::getAvailableDecades(),
-            "selectedDecade" => null
+            "title" => $title
         ]);
     }
 
